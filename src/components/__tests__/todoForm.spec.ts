@@ -1,6 +1,7 @@
 import { describe, it, expect, vi } from "vitest"
 import { mount, shallowMount } from "@vue/test-utils"
 import todoForm from "../todoForm.vue"
+import { useTodoListStore } from "@/stores/todoList"
 
 const mockOnAdd = vi.fn()
 

@@ -1,6 +1,12 @@
 <script setup lang="ts">
   import todoForm from './components/todoForm.vue'
   import todoList from './components/todoList.vue'
+  import { useTodoListStore } from './stores/todoList';
+
+  const todo_list = useTodoListStore()
+  const addTaskCheck = (name:string, description:string) => {
+    todo_list.addTask(name, description)
+  }
 
 </script>
 
@@ -9,7 +15,7 @@
     Todo-List with Vitest
   </h1>
   <div class="container">
-    <todoForm/>
+    <todoForm :addTask="addTaskCheck" :counter="todo_list.counter"/>
     <todoList class="todo_list"/>
   </div>
 </template>

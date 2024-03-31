@@ -1,19 +1,20 @@
 <script setup lang="ts">
-  import { useTodoListStore } from '../stores/todoList'
   import { ref } from 'vue';
 
-  const todoList = useTodoListStore()
+  const props = defineProps(['addTask', 'counter'])
+
   let input = ref('')
+  
 </script>
 
 <template>
-  <p class="indicator" v-if="todoList.counter === 0">
+  <p class="indicator" v-if="counter === 0">
     You have completed all tasks!
   </p>
   <p class="indicator" v-else>
-    You have <span> {{ todoList.counter }} </span> tasks left
+    You have <span> {{ counter }} </span> tasks left
   </p>
-  <form class="form" @submit.prevent="todoList.addTask(input, 'this is a basic description'), input = ''">
+  <form class="form" @submit.prevent="props.addTask(input, 'this is a description'), input = ''">
     <input type="text" class="input" v-model="input">
     <button class="btn">+</button>
   </form>

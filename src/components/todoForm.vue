@@ -16,7 +16,7 @@
   </p>
   <form class="form" @submit.prevent="props.addTask(input, 'this is a description'), input = ''">
     <input type="text" class="input" v-model="input">
-    <button class="btn">+</button>
+    <button class="btn" type="submit">+</button>
   </form>
 </template>
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1711965944100" clover="3.2.0">
-  <project timestamp="1711965944100" name="All files">
-    <metrics statements="281" coveredstatements="114" conditionals="14" coveredconditionals="4" methods="12" coveredmethods="2" elements="307" coveredelements="120" complexity="0" loc="281" ncloc="281" packages="4" files="12" classes="12"/>
+<coverage generated="1711968622389" clover="3.2.0">
+  <project timestamp="1711968622389" name="All files">
+    <metrics statements="269" coveredstatements="114" conditionals="13" coveredconditionals="4" methods="11" coveredmethods="2" elements="293" coveredelements="120" complexity="0" loc="269" ncloc="269" packages="4" files="11" classes="11"/>
     <package name="src">
       <metrics statements="48" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <file name="App.vue" path="/run/media/rasmus/Files/code/Vue3_TodoList_Vitest/src/App.vue">
@@ -280,22 +280,7 @@
       </file>
     </package>
     <package name="src.stores">
-      <metrics statements="43" coveredstatements="4" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="counter.ts" path="/run/media/rasmus/Files/code/Vue3_TodoList_Vitest/src/stores/counter.ts">
-        <metrics statements="12" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-      </file>
+      <metrics statements="31" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="todoList.ts" path="/run/media/rasmus/Files/code/Vue3_TodoList_Vitest/src/stores/todoList.ts">
         <metrics statements="31" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>

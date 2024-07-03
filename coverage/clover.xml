@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <coverage generated="1720015575298" clover="3.2.0">
   <project timestamp="1720015575298" name="All files">
     <metrics statements="286" coveredstatements="137" conditionals="15" coveredconditionals="6" methods="15" coveredmethods="4" elements="316" coveredelements="147" complexity="0" loc="286" ncloc="286" packages="4" files="11" classes="11"/>
     <package name="src">
       <metrics statements="48" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <file name="App.vue" path="/run/media/rasmus/Files/code/portfolio/Vue3_TodoList_Vitest/src/App.vue">
+=======
+<coverage generated="1712010820477" clover="3.2.0">
+  <project timestamp="1712010820478" name="All files">
+    <metrics statements="269" coveredstatements="110" conditionals="14" coveredconditionals="4" methods="12" coveredmethods="2" elements="295" coveredelements="116" complexity="0" loc="269" ncloc="269" packages="4" files="11" classes="11"/>
+    <package name="src">
+      <metrics statements="48" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="App.vue" path="/home/rasmus/code/Vue3_TodoList_Vitest/src/App.vue">
+>>>>>>> 0b1a07203ff0650c7c70e59f0160ea310b9ff86e
         <metrics statements="37" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
@@ -44,7 +53,11 @@
         <line num="36" count="0" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
       </file>
+<<<<<<< HEAD
       <file name="main.ts" path="/run/media/rasmus/Files/code/portfolio/Vue3_TodoList_Vitest/src/main.ts">
+=======
+      <file name="main.ts" path="/home/rasmus/code/Vue3_TodoList_Vitest/src/main.ts">
+>>>>>>> 0b1a07203ff0650c7c70e59f0160ea310b9ff86e
         <metrics statements="11" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
@@ -60,9 +73,15 @@
       </file>
     </package>
     <package name="src.components">
+<<<<<<< HEAD
       <metrics statements="149" coveredstatements="116" conditionals="7" coveredconditionals="5" methods="5" coveredmethods="4"/>
       <file name="todoForm.vue" path="/run/media/rasmus/Files/code/portfolio/Vue3_TodoList_Vitest/src/components/todoForm.vue">
         <metrics statements="65" coveredstatements="62" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
+=======
+      <metrics statements="143" coveredstatements="110" conditionals="6" coveredconditionals="4" methods="4" coveredmethods="2"/>
+      <file name="todoForm.vue" path="/home/rasmus/code/Vue3_TodoList_Vitest/src/components/todoForm.vue">
+        <metrics statements="61" coveredstatements="58" conditionals="3" coveredconditionals="2" methods="1" coveredmethods="0"/>
+>>>>>>> 0b1a07203ff0650c7c70e59f0160ea310b9ff86e
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -129,8 +148,13 @@
         <line num="64" count="1" type="stmt"/>
         <line num="65" count="1" type="stmt"/>
       </file>
+<<<<<<< HEAD
       <file name="todoItem.vue" path="/run/media/rasmus/Files/code/portfolio/Vue3_TodoList_Vitest/src/components/todoItem.vue">
         <metrics statements="54" coveredstatements="54" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+=======
+      <file name="todoItem.vue" path="/home/rasmus/code/Vue3_TodoList_Vitest/src/components/todoItem.vue">
+        <metrics statements="52" coveredstatements="52" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+>>>>>>> 0b1a07203ff0650c7c70e59f0160ea310b9ff86e
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -186,7 +210,11 @@
         <line num="53" count="1" type="stmt"/>
         <line num="54" count="1" type="stmt"/>
       </file>
+<<<<<<< HEAD
       <file name="todoList.vue" path="/run/media/rasmus/Files/code/portfolio/Vue3_TodoList_Vitest/src/components/todoList.vue">
+=======
+      <file name="todoList.vue" path="/home/rasmus/code/Vue3_TodoList_Vitest/src/components/todoList.vue">
+>>>>>>> 0b1a07203ff0650c7c70e59f0160ea310b9ff86e
         <metrics statements="30" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
@@ -222,7 +250,11 @@
     </package>
     <package name="src.components.icons">
       <metrics statements="47" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="5" coveredmethods="0"/>
+<<<<<<< HEAD
       <file name="IconCommunity.vue" path="/run/media/rasmus/Files/code/portfolio/Vue3_TodoList_Vitest/src/components/icons/IconCommunity.vue">
+=======
+      <file name="IconCommunity.vue" path="/home/rasmus/code/Vue3_TodoList_Vitest/src/components/icons/IconCommunity.vue">
+>>>>>>> 0b1a07203ff0650c7c70e59f0160ea310b9ff86e
         <metrics statements="7" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
@@ -232,7 +264,11 @@
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
       </file>
+<<<<<<< HEAD
       <file name="IconDocumentation.vue" path="/run/media/rasmus/Files/code/portfolio/Vue3_TodoList_Vitest/src/components/icons/IconDocumentation.vue">
+=======
+      <file name="IconDocumentation.vue" path="/home/rasmus/code/Vue3_TodoList_Vitest/src/components/icons/IconDocumentation.vue">
+>>>>>>> 0b1a07203ff0650c7c70e59f0160ea310b9ff86e
         <metrics statements="7" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
@@ -242,7 +278,11 @@
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
       </file>
+<<<<<<< HEAD
       <file name="IconEcosystem.vue" path="/run/media/rasmus/Files/code/portfolio/Vue3_TodoList_Vitest/src/components/icons/IconEcosystem.vue">
+=======
+      <file name="IconEcosystem.vue" path="/home/rasmus/code/Vue3_TodoList_Vitest/src/components/icons/IconEcosystem.vue">
+>>>>>>> 0b1a07203ff0650c7c70e59f0160ea310b9ff86e
         <metrics statements="7" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
@@ -252,7 +292,11 @@
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
       </file>
+<<<<<<< HEAD
       <file name="IconSupport.vue" path="/run/media/rasmus/Files/code/portfolio/Vue3_TodoList_Vitest/src/components/icons/IconSupport.vue">
+=======
+      <file name="IconSupport.vue" path="/home/rasmus/code/Vue3_TodoList_Vitest/src/components/icons/IconSupport.vue">
+>>>>>>> 0b1a07203ff0650c7c70e59f0160ea310b9ff86e
         <metrics statements="7" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
@@ -262,7 +306,11 @@
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
       </file>
+<<<<<<< HEAD
       <file name="IconTooling.vue" path="/run/media/rasmus/Files/code/portfolio/Vue3_TodoList_Vitest/src/components/icons/IconTooling.vue">
+=======
+      <file name="IconTooling.vue" path="/home/rasmus/code/Vue3_TodoList_Vitest/src/components/icons/IconTooling.vue">
+>>>>>>> 0b1a07203ff0650c7c70e59f0160ea310b9ff86e
         <metrics statements="19" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
@@ -286,6 +334,7 @@
       </file>
     </package>
     <package name="src.stores">
+<<<<<<< HEAD
       <metrics statements="42" coveredstatements="21" conditionals="1" coveredconditionals="1" methods="3" coveredmethods="0"/>
       <file name="todoList.ts" path="/run/media/rasmus/Files/code/portfolio/Vue3_TodoList_Vitest/src/stores/todoList.ts">
         <metrics statements="42" coveredstatements="21" conditionals="1" coveredconditionals="1" methods="3" coveredmethods="0"/>
@@ -303,6 +352,25 @@
         <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
+=======
+      <metrics statements="31" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="todoList.ts" path="/home/rasmus/code/Vue3_TodoList_Vitest/src/stores/todoList.ts">
+        <metrics statements="31" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+>>>>>>> 0b1a07203ff0650c7c70e59f0160ea310b9ff86e
         <line num="15" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>

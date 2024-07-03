@@ -1,20 +1,24 @@
 <script setup lang="ts">
   import { ref } from 'vue';
 
-  const props = defineProps(['addTask', 'counter'])
+  const props = defineProps<{ addTask: (name: string) => void; counter: number }>()
 
   let input = ref('')
   
+  const submitForm = () => {
+    props.addTask(input.value)
+    input.value = ''
+  }
 </script>
 
 <template>
-  <p class="indicator" v-if="counter === 0">
+  <p class="indicator" v-if="props.counter === 0">
     You have completed all tasks!
   </p>
   <p class="indicator" v-else>
-    You have <span> {{ counter }} </span> tasks left
+    You have <span> {{ props.counter }} </span> tasks left
   </p>
-  <form class="form" @submit.prevent="props.addTask(input, 'this is a description'), input = ''">
+  <form class="form" @submit.prevent="submitForm">
     <input type="text" class="input" v-model="input">
     <button class="btn" type="submit">+</button>
   </form>

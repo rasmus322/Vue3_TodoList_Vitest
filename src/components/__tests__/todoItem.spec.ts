@@ -7,25 +7,24 @@ const mockOnChange = vi.fn()
 
 describe('todoItem', () => {
   let wrapper: ReturnType<typeof shallowMount>
-  const mockItem = {
+  const mockTask = {
     id: Math.floor(Math.random() * 1000) + 1,
     name: 'test case',
-    description: 'description',
     done: false
   }
 
   beforeEach(() => {
     wrapper = shallowMount(todoItem, {
       propsData: {
-        item: mockItem,
-        delete: mockOnDelete,
-        change: mockOnChange
+        task: mockTask,
+        deleteTask: mockOnDelete,
+        changeTaskStatus: mockOnChange
       }
     })
   })
 
   it ('shows task name properly', () => {
-    expect(wrapper.text()).toContain(mockItem.name)
+    expect(wrapper.text()).toContain(mockTask.name)
   })
 
   it ('deletes task properly', () => {

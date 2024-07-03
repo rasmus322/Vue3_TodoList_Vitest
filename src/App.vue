@@ -4,8 +4,8 @@
   import { useTodoListStore } from './stores/todoList';
 
   const todo_list = useTodoListStore()
-  const addTaskCheck = (name:string, description:string) => {
-    todo_list.addTask(name, description)
+  const addTaskCheck = (name:string) => {
+    todo_list.addTask(name)
   }
 
 </script>

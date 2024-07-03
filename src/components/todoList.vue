@@ -1,20 +1,20 @@
 <script setup lang="ts">
-  import { useTodoListStore } from '../stores/todoList'
+  import { useTodoListStore, type ITask } from '../stores/todoList'
   import todoItem from './todoItem.vue';
 
   const todoList = useTodoListStore()
 
-  const deleteTaskCheck = (item:object) => {
-    todoList.deleteTask(item)
+  const deleteTaskCheck = (task: ITask) => {
+    todoList.deleteTask(task)
   }
-  const changeTaskStatusCheck = (item:object) => {
-    todoList.changeTaskStatus(item)
+  const changeTaskStatusCheck = (task: ITask) => {
+    todoList.changeTaskStatus(task)
   }
 </script>
 
 <template>
   <ul class="todo_list">
-    <todoItem v-for="item in todoList.tasks" :item="item" :delete="deleteTaskCheck" :change="changeTaskStatusCheck"/>
+    <todoItem v-for="task in todoList.tasks" :key="task.id" :task="task" :delete-task="deleteTaskCheck" :change-task-status="changeTaskStatusCheck"/>
   </ul>
 </template>
 

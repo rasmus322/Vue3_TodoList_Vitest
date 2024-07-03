@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">12.9% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>4/31</span>
+                <span class='fraction'>21/42</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>0/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">12.9% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>4/31</span>
+                <span class='fraction'>21/42</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -93,10 +93,31 @@
 <a name='L28'></a><a href='#L28'>28</a>
 <a name='L29'></a><a href='#L29'>29</a>
 <a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -111,56 +132,68 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { defineStore } from "pinia"
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import { defineStore } from "pinia"
 import { ref, computed } from "vue"
 &nbsp;
+export interface ITask {
+    id: number,
+    name: string,
+    done: boolean
+}
+&nbsp;
 export const useTodoListStore = defineStore('todoList', () =&gt; {
-<span class="cstat-no" title="statement not covered" >    const tasks = ref&lt;object[]&gt;([])</span>
-<span class="cstat-no" title="statement not covered" >    let counter = computed(() =&gt; tasks.value.filter(item =&gt; (item as {done: boolean}).done !== true).length)</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >    function addTask(name:string, description:string) {</span>
-<span class="cstat-no" title="statement not covered" >        let task: object = {</span>
-<span class="cstat-no" title="statement not covered" >            id: Math.floor(Math.random() * 1000) + 1,</span>
-<span class="cstat-no" title="statement not covered" >            name: name,</span>
-<span class="cstat-no" title="statement not covered" >            description: description,</span>
-<span class="cstat-no" title="statement not covered" >            done: ref(false)</span>
+    const tasks = ref&lt;ITask[]&gt;([])
+    let counter = computed(() =&gt; tasks.value.filter(task =&gt; (task as {done: boolean}).done !== true).length)
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function addTask(name: string) {</span>
+<span class="cstat-no" title="statement not covered" >        if (name.trim() === '') {</span>
+<span class="cstat-no" title="statement not covered" >            alert('Write something in your task')</span>
+<span class="cstat-no" title="statement not covered" >            return</span>
 <span class="cstat-no" title="statement not covered" >        }</span>
-<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >      </span>
+<span class="cstat-no" title="statement not covered" >        const task: ITask = {</span>
+<span class="cstat-no" title="statement not covered" >            id: Math.floor(Math.random() * 1000) + 1,</span>
+<span class="cstat-no" title="statement not covered" >            name,</span>
+<span class="cstat-no" title="statement not covered" >            done: false</span>
+<span class="cstat-no" title="statement not covered" >        }</span>
+<span class="cstat-no" title="statement not covered" >          </span>
 <span class="cstat-no" title="statement not covered" >        tasks.value.push(task)</span>
 <span class="cstat-no" title="statement not covered" >        console.log('task has been pushed')</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >    function deleteTask(item:object) {</span>
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function deleteTask(task: ITask) {</span>
 <span class="cstat-no" title="statement not covered" >        if (confirm("Are you sure you want to delete this task?")) {</span>
-<span class="cstat-no" title="statement not covered" >            tasks.value.splice(tasks.value.indexOf(item), 1)</span>
+<span class="cstat-no" title="statement not covered" >            tasks.value = tasks.value.filter(t =&gt; t.id !== task.id)</span>
 <span class="cstat-no" title="statement not covered" >        }</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >    function changeTaskStatus(item: object) {</span>
-<span class="cstat-no" title="statement not covered" >        (item as {done:boolean}).done = !(item as {done:boolean}).done</span>
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function changeTaskStatus(task: ITask) {</span>
+<span class="cstat-no" title="statement not covered" >        //(item as {done: boolean}).done = !(item as {done: boolean}).done</span>
+<span class="cstat-no" title="statement not covered" >        task.done = !task.done</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >    return { tasks, counter, addTask, deleteTask, changeTaskStatus }</span>
-<span class="cstat-no" title="statement not covered" >})</span></pre></td></tr></table></pre>
+&nbsp;
+    return { tasks, counter, addTask, deleteTask, changeTaskStatus }
+})</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-04-01T10:50:22.364Z
+                at 2024-07-03T14:06:15.292Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
